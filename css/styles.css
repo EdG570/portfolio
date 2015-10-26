@@ -17,6 +17,10 @@ ul {
   padding-left: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*-----------------HEADER SECTION---------------------*/
 #header-section {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background.png');
@@ -56,11 +60,13 @@ ul {
 #header-content > h1 {
   font-size: 3em;
   font-weight: 300;
+  margin-bottom: 0;
 }
 
 #header-content > h3 {
   font-size: 1.5em;
   font-weight: 100;
+  margin-top: 0.5em;
 }
 
 /*---------------------INTRO SECTION----------------*/
@@ -73,11 +79,25 @@ ul {
 }
 
 #intro-section p {
-  width: 30em;
+  width: 29em;
   margin: 0 auto;
   color: #333;
   font-size: 1.2em;
   font-weight: 100;
+}
+
+#contact-btn {
+  padding: 0.75em 2em;
+  background-color: #10E8B8;
+  border-radius: 5px;
+  border: none;
+  margin-top: 1em;
+}
+
+#contact-btn > a {
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #333;
 }
 
 /*--------------------PORTFOLIO SECTION---------------*/
@@ -153,3 +173,7 @@ ul {
   text-align: center;
   font-weight: 100;
 }
+
+
+/*----------------------------------------------------*/
+/*---------------------CONTACT PAGE-------------------*/
