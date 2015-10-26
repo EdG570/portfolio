@@ -14,6 +14,7 @@ h1, h2, h3 {
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 /*-----------------HEADER SECTION---------------------*/
@@ -89,13 +90,32 @@ ul {
   margin-bottom: 2em;
 }
 
+#portfolio-section > ul {
+  width: 71.25em;
+  margin: 0 auto;
+}
+
 #portfolio-section > ul > li {
   display: inline-block;
   width: 22em;
+  margin-right: 1em;
+}
 
+#portfolio-section > ul > li:first-child {
+  margin-left: 1em;
+}
+
+#portfolio-section > ul > li:last-child {
+  margin-right: 0;
 }
 
 #portfolio-section img {
   border-radius: 5px;
   width: 22em;
+  height: 12em;
+}
+
+#portfolio-section h3 {
+  text-align: center;
+  font-weight: 300;
 }
