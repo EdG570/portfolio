@@ -31,18 +31,18 @@ a {
   padding-bottom: 20em;
 }
 
-#header-section ul {
+.header-links {
   list-style: none; 
   float: right; 
 }
 
-#header-section ul > li {
+.header-links > li {
   display: inline-block;
   margin-right: 2em;
   margin-left: 2em;
 }
 
-#header-section ul > li > a {
+.header-links > li > a {
   text-decoration: none;
   color: #fff;
   font-weight: 300;
@@ -102,43 +102,40 @@ a {
 
 /*--------------------PORTFOLIO SECTION---------------*/
 
-#portfolio-section {
+.portfolio-section {
   padding: 3em 0;
   padding-bottom: 5em;
 }
 
-#portfolio-section > h2 {
+.portfolio-section h2 {
   text-align: center;
   font-weight: 300;
   margin-bottom: 2em;
 }
 
-#portfolio-section > ul {
-  width: 71.25em;
+.portfolio-section ul {
+  width: 69.65em;
   margin: 0 auto;
 }
 
-#portfolio-section > ul > li {
+.portfolio-section ul li {
   display: inline-block;
   width: 22em;
   margin-right: 1em;
+  margin-top: 1em;
 }
 
-#portfolio-section > ul > li:first-child {
-  margin-left: 1em;
-}
-
-#portfolio-section > ul > li:last-child {
+.portfolio-section ul li:last-child {
   margin-right: 0;
 }
 
-#portfolio-section img {
+.portfolio-section img {
   border-radius: 5px;
   width: 22em;
   height: 12em;
 }
 
-#portfolio-section h3 {
+.portfolio-section h3 {
   text-align: center;
   font-weight: 300;
 }
@@ -176,4 +173,33 @@ a {
 
 
 /*----------------------------------------------------*/
-/*---------------------CONTACT PAGE-------------------*/
+/*---------------------Portfolio Page-------------------*/
+
+/*--------------------NAV SECTION------------*/
+.nav-section {
+  background-color: #000;
+  padding: 0.5em 0 2em 0;
+}
+
+.header-content {
+  float: left;
+}
+
+.logo {
+  width: 3em;
+  float: left;
+}
+
+.nav-logo > h1 {
+  font-size: 1.25em;
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+  top: 0.6em;
+  left: 0.5em;
+}
+
+
+
+
+
