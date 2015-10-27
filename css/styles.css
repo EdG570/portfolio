@@ -240,9 +240,10 @@ a {
 
 /*---------------------------MEDIA QUERIES---------------------*/
 
+/*----------Landing Page-----------*/
+
 @media only screen and (max-width: 540px) {
   .header-links > li {
-    display: inline-block;
     margin-right: 1em;
     margin-left: 1em;
   }
@@ -273,4 +274,27 @@ a {
   .portfolio-section ul li:last-child {
     margin-right: auto;
   }
+}
+
+/*----------Portfolio Page--------------*/
+
+@media only screen and (max-width: 755px) {
+  .logo,
+  .nav-logo {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .header-links { 
+    float: none;
+    width: 25em;
+    margin: 2em auto 0 auto; 
+  }
+
+  .header-links > li {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
 }
