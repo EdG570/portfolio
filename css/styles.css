@@ -322,12 +322,17 @@ a {
   }
 
   .header-links {
-    width: 95%;
+    width: 85%;
+    margin: 0 auto;
   }
 
   .header-links > li {
     margin-right: 0.15em;
     font-size: 90%;
+  }
+
+  #header-section {
+    padding-top: 1em;
   }
 }
 
