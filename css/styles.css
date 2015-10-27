@@ -114,12 +114,13 @@ a {
 }
 
 .portfolio-section ul {
-  width: 69.65em;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio-section ul li {
-  display: inline-block;
   width: 22em;
   margin-right: 1em;
   margin-top: 1em;
@@ -260,25 +261,15 @@ a {
   }
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 735px) {
   .portfolio-section ul li {
-    display: block;
-    width: 22em;
-    margin: 0 auto;
+    margin-right: 0;
   }
-
-  .portfolio-section ul {
-    width: 100%;
-  }
-
-  .portfolio-section ul li:last-child {
-    margin-right: auto;
-  }
-}
+} 
 
 /*----------Portfolio Page--------------*/
 
-@media only screen and (max-width: 755px) {
+@media only screen and (max-width: 785px) {
   .logo,
   .nav-logo {
     float: none;
@@ -289,12 +280,20 @@ a {
   .header-links { 
     float: none;
     width: 25em;
-    margin: 2em auto 1em auto; 
+    margin: 0 auto; 
   }
 
   .header-links > li {
     margin-right: 1em;
     margin-left: 1em;
+  }
+
+  .nav-section {
+    padding-top: 1em;
+  }
+
+  #header-section {
+    padding-top: 1em;
   }
 
 }
@@ -311,6 +310,7 @@ a {
     width: 27.4em;
     margin: 0 auto;
     margin-left: 5%;
+    margin-bottom: 0.25em;
   }
 
   #header-content {
@@ -321,16 +321,6 @@ a {
     font-size: 2em;
   }
 
-  .header-links {
-    width: 85%;
-    margin: 0 auto;
-  }
-
-  .header-links > li {
-    margin-right: 0.15em;
-    font-size: 90%;
-  }
-
   #header-section {
     padding-top: 1em;
   }
@@ -339,5 +329,24 @@ a {
 @media only screen and (max-width: 1140px) and (min-width: 756px) {
   .nav-logo {
     margin-left: 2em;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .header-links {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header-links > li {
+    margin-right: 0.15em;
+    font-size: 90%;
+  }
+
+  .portfolio-section img,
+  .portfolio-section ul li,
+  .portfolio-section ul li:last-child {
+    width: 20em;
+    margin: 0 auto;
   }
 }
