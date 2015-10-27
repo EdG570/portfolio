@@ -312,7 +312,23 @@ a {
     margin: 0 auto;
     margin-left: 5%;
   }
-  
+
+  #header-content {
+    width: 90%;
+  }
+
+  #header-content > h1 {
+    font-size: 2em;
+  }
+
+  .header-links {
+    width: 95%;
+  }
+
+  .header-links > li {
+    margin-right: 0.15em;
+    font-size: 90%;
+  }
 }
 
 @media only screen and (max-width: 1140px) and (min-width: 756px) {
