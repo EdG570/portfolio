@@ -236,3 +236,41 @@ a {
   color: #0D6D58;
   margin-bottom: 0.25em;
 }
+
+
+/*---------------------------MEDIA QUERIES---------------------*/
+
+@media only screen and (max-width: 540px) {
+  .header-links > li {
+    display: inline-block;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  #header-content {
+    width: 25em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #intro-section p {
+    width: 23em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .portfolio-section ul li {
+    display: block;
+    width: 22em;
+    margin: 0 auto;
+  }
+
+  .portfolio-section ul {
+    width: 100%;
+  }
+
+  .portfolio-section ul li:last-child {
+    margin-right: auto;
+  }
+}
