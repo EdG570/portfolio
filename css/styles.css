@@ -289,7 +289,7 @@ a {
   .header-links { 
     float: none;
     width: 25em;
-    margin: 2em auto 0 auto; 
+    margin: 2em auto 1em auto; 
   }
 
   .header-links > li {
@@ -297,4 +297,26 @@ a {
     margin-left: 1em;
   }
 
+}
+
+/*-------------About Me Page-------------*/
+
+@media only screen and (max-width: 585px) {
+  #about-section p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  #about-section h3 {
+    width: 27.4em;
+    margin: 0 auto;
+    margin-left: 5%;
+  }
+  
+}
+
+@media only screen and (max-width: 1140px) and (min-width: 756px) {
+  .nav-logo {
+    margin-left: 2em;
+  }
 }
