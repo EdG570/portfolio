@@ -69,6 +69,10 @@ a {
   margin-top: 0.5em;
 }
 
+#logo-home {
+  width: 10em;
+}
+
 /*---------------------INTRO SECTION----------------*/
 
 #intro-section {
