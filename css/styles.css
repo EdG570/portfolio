@@ -395,6 +395,7 @@ body:before {
 
   #header-content {
     width: 90%;
+    margin-top: -1em;
   }
 
   #header-content > h1 {
