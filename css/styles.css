@@ -195,13 +195,15 @@ body:before {
 .portfolio-section h3 {
   text-align: center;
   font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 #portfolio-link {
   font-weight: 200;
   color: #777;
   position: relative;
-  top: 2.5em;
+  top: 1.5em;
 }
 
 #portfolio-link:hover {
@@ -337,7 +339,7 @@ body:before {
   }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 703px) {
   .portfolio-section ul li {
     margin-right: 0;
   }
@@ -356,7 +358,8 @@ body:before {
   .header-links { 
     float: none;
     width: 25em;
-    margin: 0 auto; 
+    margin: 0 auto;
+    margin-top: 1.5em; 
   }
 
   .header-links > li {
@@ -366,6 +369,7 @@ body:before {
 
   .nav-section {
     padding-top: 1em;
+    padding-bottom: 2em;
   }
 
   #header-section {
