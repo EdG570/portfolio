@@ -23,7 +23,9 @@ a {
 
 /*-----------------HEADER SECTION---------------------*/
 #header-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background.png');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background.jpg');
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,6 +48,11 @@ a {
   text-decoration: none;
   color: #fff;
   font-weight: 300;
+}
+
+.header-links > li > a:hover {
+  border-bottom: 2px solid #10E8B8;
+  padding-bottom: 0.5em;
 }
 
 #header-content {
@@ -73,6 +80,12 @@ a {
   width: 10em;
 }
 
+#down-arrow {
+  width: 10%;
+  position: relative;
+  top: 5em;
+}
+
 /*---------------------INTRO SECTION----------------*/
 
 #intro-section {
@@ -80,6 +93,7 @@ a {
   background-color: #F0F8F6;
   line-height: 1.4;
   text-align: center;
+  position: relative;
 }
 
 #intro-section p {
@@ -109,6 +123,7 @@ a {
 .portfolio-section {
   padding: 3em 0;
   padding-bottom: 5em;
+  text-align: center;
 }
 
 .portfolio-section h2 {
@@ -137,12 +152,23 @@ a {
 .portfolio-section img {
   border-radius: 5px;
   width: 22em;
-  height: 12em;
+  height: 12em;  
 }
 
 .portfolio-section h3 {
   text-align: center;
   font-weight: 300;
+}
+
+#portfolio-link {
+  font-weight: 200;
+  color: #777;
+  position: relative;
+  top: 1em;
+}
+
+#portfolio-link:hover {
+  color: #10E8B8;
 }
 
 /*------------------FOOTER SECTION----------*/
@@ -211,7 +237,7 @@ a {
 /*------------------------------------------------------*/
 
 #about-section {
-  padding: 0em 0 7em 0;
+  padding: 0em 0 5em 0;
 }
 
 #ed-image {
@@ -352,5 +378,27 @@ a {
   .portfolio-section ul li:last-child {
     width: 20em;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #header-section {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background-med.jpg');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background-med.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background-med.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #header-section {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background-small.jpg');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background-small.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/header-background-small.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
