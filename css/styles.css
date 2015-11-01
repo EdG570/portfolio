@@ -1,11 +1,6 @@
-html {
-  height: 100%;
-}
-
 body {
   font-family: 'Lato', sans-serif;
   letter-spacing: 2px;
-  height: 100%;
 }
 
 h1, h2, h3 {
@@ -24,6 +19,38 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+/*-------------------FOOTER FIX------------------------*/
+* { margin: 0; padding: 0;}
+
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom: 158px; /* must be same height as the footer */
+}
+
+#footer-section {
+  position: relative;
+  margin-top: -158px; /* negative value of footer height */
+  height: 158px;
+  clear:both;
+} 
+
+/*--Opera Fix--*/
+body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;
 }
 
 /*-----------------HEADER SECTION---------------------*/
@@ -181,7 +208,6 @@ a {
 #footer-section {
   background-color: #000;
   color: #fff;
-  padding: 2em 0;
 }
 
 #footer-section img {
@@ -200,6 +226,11 @@ a {
 #social-media {
   width: 11em;
   margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+#footer-container {
+  padding-top: 2em;
 }
 
 #footer-container p {
