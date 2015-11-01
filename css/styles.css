@@ -115,7 +115,7 @@ body:before {
 }
 
 #down-arrow {
-  width: 10%;
+  width: 4em;
   position: relative;
   top: 5em;
 }
@@ -127,7 +127,7 @@ body:before {
   background-color: #F0F8F6;
   line-height: 1.4;
   text-align: center;
-  position: relative;
+  
 }
 
 #intro-section p {
@@ -144,6 +144,10 @@ body:before {
   border-radius: 5px;
   border: none;
   margin-top: 1em;
+}
+
+#contact-btn:hover {
+  background-color: #60F8D6;
 }
 
 #contact-btn > a {
@@ -237,6 +241,11 @@ body:before {
 #footer-container p {
   text-align: center;
   font-weight: 100;
+}
+
+#social-media a:hover {
+  border-bottom: 2px solid #10E8B8;
+  padding-bottom: 0.5em;
 }
 
 
