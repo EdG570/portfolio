@@ -21,14 +21,6 @@ a {
   text-decoration: none;
 }
 
-/*-----------On portfolio image hover--------*/
-
-.img-container {
-  background-color: #000;
-  border-radius: 5px;
-  width: 22em;
-  height: 12em;
-}
 
 /*-------------------FOOTER FIX------------------------*/
 * { margin: 0; padding: 0;}
@@ -235,6 +227,13 @@ body:before {
   position: relative;
   top: 3.3em;
   padding: 0;
+}
+
+.img-container {
+  background-color: #000;
+  border-radius: 5px;
+  width: 22em;
+  height: 12em;
 }
 
 .portfolio-section img {
@@ -485,12 +484,14 @@ body:before {
     font-size: 90%;
   }
 
-  .portfolio-section img,
   .portfolio-section ul li,
-  .portfolio-section ul li:last-child {
+  .portfolio-section ul li:last-child,
+  .portfolio-section img,
+  .img-container {
     width: 20em;
     margin: 0 auto;
   }
+
 }
 
 @media only screen and (max-width: 960px) {
