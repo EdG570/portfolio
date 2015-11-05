@@ -24,7 +24,7 @@ a {
 /*-----------On portfolio image hover--------*/
 
 .img-container {
-  background-color: #34534C;
+  background-color: #000;
   border-radius: 5px;
   width: 22em;
   height: 12em;
@@ -203,16 +203,6 @@ body:before {
   margin-right: 0;
 }
 
-.portfolio-section img {
-  border-radius: 5px;
-  width: 22em;
-  height: 12em; 
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
-}
-
 .portfolio-section h3 {
   text-align: center;
   font-weight: 300;
@@ -246,6 +236,33 @@ body:before {
   top: 3.3em;
   padding: 0;
 }
+
+.portfolio-section img {
+  border-radius: 5px;
+  width: 22em;
+  height: 12em; 
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+}
+
+.hover-text {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5em 0;
+  border-radius: 0 0 5px 5px;
+  bottom: 2.2em;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+}
+
 
 /*------------------FOOTER SECTION----------*/
 
@@ -326,7 +343,7 @@ body:before {
 /*------------------------------------------------------*/
 
 #about-section {
-  padding: 0em 0 5em 0;
+  padding: 0em 0 1em 0;
 }
 
 #ed-image {
