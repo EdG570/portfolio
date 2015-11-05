@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   //Scroll down
   $('#down-arrow').on("click", function() {
-    $(this).velocity("scroll", { duration: 1500, offset: 170, easing: "easeInSine" })
+    $(this).velocity("scroll", { duration: 1500, offset: 180, easing: "easeInSine" })
   });
 
   $('#down-arrow').mouseenter(function(){
