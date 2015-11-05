@@ -21,6 +21,15 @@ a {
   text-decoration: none;
 }
 
+/*-----------On portfolio image hover--------*/
+
+.img-container {
+  background-color: #34534C;
+  border-radius: 5px;
+  width: 22em;
+  height: 12em;
+}
+
 /*-------------------FOOTER FIX------------------------*/
 * { margin: 0; padding: 0;}
 
@@ -86,6 +95,10 @@ body:before {
 .header-links > li > a:hover {
   border-bottom: 2px solid #10E8B8;
   padding-bottom: 0.5em;
+  transition: border .2s ease;
+  -moz-transition: border .2s ease;
+  -webkit-transition: border .2s ease;
+  -o-transition: border .2s ease;
 }
 
 #header-content {
@@ -148,6 +161,10 @@ body:before {
 
 #contact-btn:hover {
   background-color: #60F8D6;
+  transition: background-color .5s ease;
+  -moz-transition: background-color .5s ease;
+  -webkit-transition: background-color .5s ease;
+  -o-transition: background-color .5s ease;
 }
 
 #contact-btn > a {
@@ -159,7 +176,7 @@ body:before {
 /*--------------------PORTFOLIO SECTION---------------*/
 
 .portfolio-section {
-  padding: 4em 0 6em 0;
+  padding: 4em 0 4em 0;
   text-align: center;
 }
 
@@ -189,7 +206,11 @@ body:before {
 .portfolio-section img {
   border-radius: 5px;
   width: 22em;
-  height: 12em;  
+  height: 12em; 
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
 }
 
 .portfolio-section h3 {
@@ -203,11 +224,27 @@ body:before {
   font-weight: 200;
   color: #777;
   position: relative;
-  top: 1.5em;
+  top: 3em;
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 10px 15px;
 }
 
 #portfolio-link:hover {
-  color: #10E8B8;
+  background-color: #60F8D6;
+  border: none;
+  transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -webkit-transition: background-color .5s ease;
+  -o-transition: background-color .5s ease;
+}
+
+.arrow-container {
+  width: 5em;
+  margin: 0 auto;
+  position: relative;
+  top: 3.3em;
+  padding: 0;
 }
 
 /*------------------FOOTER SECTION----------*/
@@ -231,7 +268,7 @@ body:before {
 }
 
 #social-media {
-  width: 11em;
+  width: 10.2em;
   margin: 0 auto;
   margin-bottom: 1em;
 }
@@ -248,6 +285,10 @@ body:before {
 #social-media a:hover {
   border-bottom: 2px solid #10E8B8;
   padding-bottom: 0.5em;
+  transition: border .2s ease;
+  -moz-transition: border .2s ease;
+  -webkit-transition: border .2s ease;
+  -o-transition: border .2s ease;
 }
 
 
