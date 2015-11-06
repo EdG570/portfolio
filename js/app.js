@@ -63,6 +63,11 @@ $(document).ready(function(){
     shake(this);
   });
 
+  //Dropdown Menu
+  $('.menu').on('click', function(){
+    $('.hidden-links').toggleClass('show-links');
+  });
+
  
 });//End document ready
 

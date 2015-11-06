@@ -125,6 +125,54 @@ body:before {
   top: 5em;
 }
 
+.hidden {
+  margin-left: 1em;
+}
+
+.menu {
+  display: none;
+  width: 2em;
+}
+
+.hidden-links {
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.show-links {
+  display: block !important;
+}
+
+.hidden > .hidden-links > li {
+  padding: 1em 2em;
+  border: 1px solid #333;
+  background-color: #000;
+  width: 5em;
+}
+
+.hidden > .hidden-links > li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.hidden > .hidden-links > li:first-child {
+  border-radius: 0 5px 0 0;
+}
+
+.hidden > .hidden-links > li:hover {
+  background-color: #10E8B8;
+  transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
+  -o-transition: background-color .5s ease-in-out;
+}
+
+.hidden > .hidden-links > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
 /*---------------------INTRO SECTION----------------*/
 
 #intro-section {
@@ -380,9 +428,12 @@ body:before {
 /*----------Landing Page-----------*/
 
 @media only screen and (max-width: 540px) {
-  .header-links > li {
-    margin-right: 1em;
-    margin-left: 1em;
+  .header-links {
+    display: none;
+  }
+
+  .menu {
+    display: block;
   }
 
   #header-content {
@@ -405,7 +456,7 @@ body:before {
 
 /*----------Portfolio Page--------------*/
 
-@media only screen and (max-width: 785px) {
+@media only screen and (max-width: 929px) {
   .logo,
   .nav-logo {
     float: none;
@@ -415,7 +466,7 @@ body:before {
 
   .header-links { 
     float: none;
-    width: 25em;
+    width: 32em;
     margin: 0 auto;
     margin-top: 1em; 
   }
@@ -468,7 +519,7 @@ body:before {
   }
 }
 
-@media only screen and (max-width: 1140px) and (min-width: 756px) {
+@media only screen and (max-width: 1140px) and (min-width: 929px) {
   .nav-logo {
     margin-left: 2em;
   }
