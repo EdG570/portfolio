@@ -220,6 +220,11 @@ body:before {
   text-align: center;
 }
 
+.container-images {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 .portfolio-section h2 {
   text-align: center;
   font-weight: 300;
@@ -235,8 +240,8 @@ body:before {
 
 .portfolio-section ul li {
   width: 22em;
-  margin-right: 1em;
-  margin-top: 1em;
+  margin: 1em 1em 0 1em;
+
 }
 
 .portfolio-section ul li:last-child {
@@ -292,6 +297,27 @@ body:before {
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
   -o-transition: opacity .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  -moz-transition: transform .5s ease-in-out;
+  -webkit-transition: transform .5s ease-in-out;
+  -o-transition: transform .5s ease-in-out;
+}
+
+.portfolio-section img:hover {
+  -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.1);
+  transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+  z-index: 999;
+  -webkit-box-shadow: -5px 5px 3px #333;
+       -moz-box-shadow: -5px 5px 3px #333;
+            box-shadow: -5px 5px 3px #333;
+
 }
 
 .hover-text {
@@ -299,15 +325,43 @@ body:before {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 0.5em 0;
   border-radius: 0 0 5px 5px;
-  bottom: 2.2em;
+  bottom: 1.8em;
   color: #fff;
   font-size: 1em;
   font-weight: 200;
   opacity: 0;
   transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+}
+
+#quiz {
+  color: orange;
+}
+
+#band {
+  color: lightblue;
+}
+
+#spire {
+  color: #5DB3E9;
+}
+
+#shop {
+  color: #FBEA00;
+}
+
+#hot {
+  color: #FF0000;
+}
+
+.hover-text span {
+  opacity: 0.7;
 }
 
 
@@ -439,6 +493,10 @@ body:before {
   #header-content {
     width: 25em;
   }
+
+  .nav-section {
+    padding-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -451,6 +509,7 @@ body:before {
 @media only screen and (max-width: 703px) {
   .portfolio-section ul li {
     margin-right: 0;
+    margin-left: 0;
   }
 } 
 

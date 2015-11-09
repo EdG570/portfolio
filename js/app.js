@@ -44,14 +44,16 @@ $(document).ready(function(){
 
 
   //Adds/removes portfolio image opacity
-  $('.portfolio-section').find('li').mouseenter(function(){
-        $(this).siblings('li').find('img').css('opacity', '0.5');
-        $(this).find('.hover-text').css('opacity', '1');
+  $('.portfolio-section').find('img').mouseenter(function(){
+        $(this).parent().parent().parent().siblings('li').children('a').children('.img-container').find('img').css('opacity', '0.5');
+        $(this).siblings('.hover-text').css('opacity', '1');
+        $(this).siblings('.hover-text').css('transform', 'scale(1.1)');
   });
 
-  $('.portfolio-section').find('li').mouseleave(function(){
-        $(this).siblings('li').find('img').css('opacity', '1');
-        $(this).find('.hover-text').css('opacity', '0');
+  $('.portfolio-section').find('img').mouseleave(function(){
+        $(this).parent().parent().parent().siblings('li').children('a').children('.img-container').find('img').css('opacity', '1');
+        $(this).siblings('.hover-text').css('opacity', '0');
+        $(this).siblings('.hover-text').css('transform', 'scale(1)');
   });
 
   //Shake button on hover
@@ -65,8 +67,14 @@ $(document).ready(function(){
 
   //Dropdown Menu
   $('.menu').on('click', function(){
-    $('.hidden-links').toggleClass('show-links');
+    $('.hidden-links').slideToggle(1000);
+
+    $('.hidden-links').mouseleave(function(){
+      $('.hidden-links').slideUp(1000);
+    });
   });
+
+
 
  
 });//End document ready
